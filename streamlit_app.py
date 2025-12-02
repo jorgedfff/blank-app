@@ -1,6 +1,16 @@
 import streamlit as st
 
-st.title("🎈 Introducción a las proteínas")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+
+st.set_page_config(page_title="Inicio - Proteínas", page_icon="🏠", layout="wide")
+
+def main():
+    st.title("🏠 Introducción a las Proteínas")
+
+    st.markdown("""
+    ## ¿Qué son las proteínas?
+    Las proteínas son macromoléculas formadas por cadenas de aminoácidos y desempeñan funciones esenciales en los seres vivos, tales como:
+    - Estructurales
+    - Catalíticas (enzimas)
+    - De transporte
+    - De señalización
+    - De defensa
