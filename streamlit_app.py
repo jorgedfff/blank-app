@@ -27,9 +27,6 @@ def main():
     - Estructura alargada y resistente
     - Función estructural
     - Ejemplos: Colágeno, Queratina, Fibrina
-
-    *Aquí irá una imagen del colágeno*
-    *Aquí irá una imagen de la queratina*
     """)
     st.image("https://mibepharma.com/fileadmin/_processed_/5/1/csm_Que-es-el-Colageno_a220342844.jpg")
     st.markdown(""" Representación de la estructura tridimensional digitalizada del colágeno
