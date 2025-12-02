@@ -14,3 +14,6 @@ def main():
     - De transporte
     - De señalización
     - De defensa
+
+    *Aquí irá una imagen representativa general de una proteína (estructura 3D)*
+    """)
