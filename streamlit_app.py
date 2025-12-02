@@ -53,9 +53,10 @@ def main():
     - Permiten transporte, señalización y comunicación celular
     - Ejemplos: Canales iónicos, GPCR, Bombas ATPasa
 
-    *Aquí irá una imagen de un canal iónico*
     """)
-
+    st.image("https://media.istockphoto.com/id/1333139388/es/foto/canal-iónico-en-la-membrana-celular.jpg?s=612x612&w=0&k=20&c=M7maeDkFLnE_o7Sv8rJqcqypuxU3luavc_HOm9egO0k=")
+    st.markdown(""" Representación digitalizada de un canal iónico.
+    """)
     st.markdown("""
     ---
     ### 4. Proteínas Motoras
