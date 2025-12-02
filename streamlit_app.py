@@ -42,7 +42,12 @@ def main():
     *Aquí irá una imagen de la hemoglobina*
     *Aquí irá una imagen de una enzima*
     """)
-
+    st.image("https://us.mozaweb.com/es/mozaik3D/KEM/szerves/hemoglobin/preview/Molekula.jpg")
+    st.markdown(""" Representación de la estructura tridimensional digitalizada de la hemoglobina
+    """)
+    st.image("https://www.shutterstock.com/image-illustration/pepsin-3d-model-enzyme-that-260nw-108250013.jpg")
+    st.markdown(""" Representación de la estructura tridimensional digitalizada de la enzima pepsina
+    """)
     st.markdown("""
     ---
     ### 3. Proteínas de Membrana
