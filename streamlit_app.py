@@ -15,11 +15,11 @@ def main():
     - De señalización
     - De defensa
 
+    *Aquí irá una imagen representativa general de una proteína (estructura 3D)*
     """)
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Myoglobin.png/500px-Myoglobin.png")
-st.markdown(""" Representación de la estructura tridimensional digitalizada de la mioglobina""")
-st.markdown("""
-    
+
+    st.markdown("""
+    ---
     ## Ejemplos de tipos de proteínas
 
     ### 1. Proteínas Fibrosas
