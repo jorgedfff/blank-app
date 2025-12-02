@@ -15,7 +15,7 @@ def main():
 
     """)
     st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Myoglobin.png/500px-Myoglobin.png")
-    st.markdown(""" Representación de la estructura tridimensional digitalizada de la mioglobina
+    st.markdown(""" Representación de la estructura tridimensional digitalizada de la mioglobina.
     """)
     st.markdown("""
     ---
@@ -27,10 +27,10 @@ def main():
     - Ejemplos: Colágeno, Queratina, Fibrina
     """)
     st.image("https://mibepharma.com/fileadmin/_processed_/5/1/csm_Que-es-el-Colageno_a220342844.jpg")
-    st.markdown(""" Representación de la estructura tridimensional digitalizada del colágeno
+    st.markdown(""" Representación de la estructura tridimensional digitalizada del colágeno.
     """)
     st.image("https://www.shutterstock.com/image-illustration/example-keratin-structure-fibrous-structural-260nw-510065677.jpg")
-    st.markdown(""" Representación de la estructura tridimensional digitalizada de la queratina
+    st.markdown(""" Representación de la estructura tridimensional digitalizada de la queratina.
     """)
     st.markdown("""
     ---
@@ -39,14 +39,12 @@ def main():
     - Funciones dinámicas y catalíticas
     - Ejemplos: Hemoglobina, Mioglobina, Enzimas
 
-    *Aquí irá una imagen de la hemoglobina*
-    *Aquí irá una imagen de una enzima*
     """)
     st.image("https://us.mozaweb.com/es/mozaik3D/KEM/szerves/hemoglobin/preview/Molekula.jpg")
-    st.markdown(""" Representación de la estructura tridimensional digitalizada de la hemoglobina
+    st.markdown(""" Representación de la estructura tridimensional digitalizada de la hemoglobina.
     """)
     st.image("https://www.shutterstock.com/image-illustration/pepsin-3d-model-enzyme-that-260nw-108250013.jpg")
-    st.markdown(""" Representación de la estructura tridimensional digitalizada de la enzima pepsina
+    st.markdown(""" Representación de la estructura tridimensional digitalizada de la enzima pepsina.
     """)
     st.markdown("""
     ---
