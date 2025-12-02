@@ -1,3 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Inicio - Proteínas", page_icon="🏠", layout="wide")
+st.title("🎈 Introducción a las proteínas")
+st.write(
+    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+)
