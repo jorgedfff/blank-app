@@ -17,6 +17,7 @@ def main():
 
     *Aquí irá una imagen representativa general de una proteína (estructura 3D)*
     """)
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Myoglobin.png/500px-Myoglobin.png")
 
     st.markdown("""
     ---
