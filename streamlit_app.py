@@ -1,4 +1,5 @@
 import streamlit as st
+import py3Dmol
 
 st.set_page_config(page_title="Inicio - Proteínas", page_icon="🧬", layout="wide")
 
