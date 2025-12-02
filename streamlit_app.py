@@ -62,19 +62,21 @@ def main():
     ### 4. Proteínas Motoras
     - Permiten el movimiento celular
     - Ejemplos: Actina, Miosina, Dineína, Kinesina
-
-    *Aquí irá una imagen de miosina*
+    
     """)
-
+    st.image("https://www.lifeder.com/wp-content/uploads/2019/05/miosina.jpg")
+    st.markdown(""" Representación digitalizada de miosina.
+    """)
     st.markdown("""
     ---
     ### 5. Proteínas de Almacenamiento
     - Guardan iones o moléculas para usarse después
     - Ejemplos: Ferritina, Caseína
 
-    *Aquí irá una imagen de ferritina*
     """)
-
+    st.image("https://www.researchgate.net/publication/337519666/figure/fig2/AS:11431281109081296@1671736572353/Figura-2-Estructura-de-la-ferritina-en-la-que-se-muestra-la-disposicion-de-las.png")
+    st.markdown(""" Representación digitalizada de ferritina.
+    """)
     st.markdown("""
     ---
     ### 6. Proteínas Reguladoras
@@ -83,6 +85,8 @@ def main():
 
     *Aquí irá una imagen de un factor de transcripción*
     """)
-
+    st.image("https://upload.wikimedia.org/wikipedia/commons/7/72/1FOS.png")
+    st.markdown(""" Representación de factor de transcripción AP-1.
+    """)
 if __name__ == "__main__":
     main()
