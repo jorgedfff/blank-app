@@ -6,7 +6,8 @@ def main():
 
     st.markdown("""
     ## ¿Qué son las proteínas?
-    Las proteínas son macromoléculas formadas por cadenas de aminoácidos y desempeñan funciones esenciales en los seres vivos, tales como:
+    Las proteínas son macromoléculas esenciales formadas por cadenas de aminoácidos. Participan en prácticamente todos los procesos del cuerpo humano: desde la estructura y reparación de tejidos hasta la regulación del metabolismo y la defensa inmunológica.
+    Son uno de los tres macronutrientes principales, junto con los carbohidratos y las grasas. Se clasifican en: 
     - Estructurales
     - Catalíticas (enzimas)
     - De transporte
