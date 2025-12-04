@@ -23,6 +23,7 @@ def main():
     ## Ejemplos de tipos de proteínas
 
     ### 1. Proteínas Fibrosas
+    Las proteínas fibrosas se caracterizan por presentar estructuras largas, alargadas y con forma de fibras. Son altamente resistentes y desempeñan funciones principalmente estructurales, proporcionando soporte y elasticidad a tejidos como la piel, músculos, tendones y cabello. Ejemplos importantes incluyen el colágeno, la queratina y la elastina, que conforman gran parte del armazón del cuerpo.
     - Estructura alargada y resistente
     - Función estructural
     - Ejemplos: Colágeno, Queratina, Fibrina
@@ -36,6 +37,8 @@ def main():
     st.markdown("""
     ---
     ### 2. Proteínas Globulares
+    Las proteínas globulares tienen una estructura compacta y esférica que les permite participar en procesos dinámicos dentro del organismo. Suelen ser solubles en agua y desempeñan funciones como transporte, catálisis de reacciones químicas y regulación celular. Ejemplos de este tipo son las enzimas, anticuerpos y hormonas proteicas, todas esenciales para mantener el equilibrio fisiológico.
+
     - Forma esférica
     - Funciones dinámicas y catalíticas
     - Ejemplos: Hemoglobina, Mioglobina, Enzimas
@@ -50,6 +53,8 @@ def main():
     st.markdown("""
     ---
     ### 3. Proteínas de Membrana
+    Las proteínas de membrana están incrustadas o asociadas a la membrana celular, donde cumplen funciones vitales como el transporte de moléculas, la transmisión de señales y el mantenimiento de la estructura celular. Pueden atravesar la membrana o ubicarse en su superficie interna o externa, permitiendo la comunicación entre el interior de la célula y su entorno.
+
     - Se encuentran incrustadas en la membrana celular
     - Permiten transporte, señalización y comunicación celular
     - Ejemplos: Canales iónicos, GPCR, Bombas ATPasa
@@ -61,6 +66,8 @@ def main():
     st.markdown("""
     ---
     ### 4. Proteínas Motoras
+    Las proteínas motoras son responsables del movimiento dentro de las células y del desplazamiento de estructuras completas como los músculos. Utilizan energía, normalmente en forma de ATP, para generar cambios conformacionales que producen movimiento. Entre las más importantes se encuentran la miosina, la quinesina y la dineína, esenciales para el transporte intracelular y la contracción muscular.
+
     - Permiten el movimiento celular
     - Ejemplos: Actina, Miosina, Dineína, Kinesina
     
@@ -71,6 +78,8 @@ def main():
     st.markdown("""
     ---
     ### 5. Proteínas de Almacenamiento
+    Las proteínas de almacenamiento se encargan de acumular y conservar nutrientes, especialmente aminoácidos y minerales esenciales, para ser utilizados posteriormente por el organismo o por células en crecimiento. Ejemplos comunes son la ferritina, que almacena hierro en animales, y las proteínas de reserva presentes en semillas como la gliadina o la zeína.
+
     - Guardan iones o moléculas para usarse después
     - Ejemplos: Ferritina, Caseína
 
@@ -81,6 +90,8 @@ def main():
     st.markdown("""
     ---
     ### 6. Proteínas Reguladoras
+    Las proteínas reguladoras participan en el control y coordinación de procesos biológicos. Actúan activando o inhibiendo funciones específicas, regulando la expresión génica, modulando rutas metabólicas o controlando el ciclo celular. Entre estas proteínas se encuentran los factores de transcripción, algunas hormonas y proteínas que responden a señales del ambiente.
+
     - Controlan la expresión génica y otras actividades celulares
     - Ejemplos: Factores de transcripción, represores, proteínas activadoras
 
