@@ -39,7 +39,7 @@ with t1:
 # -----------------------------
 with t2:
     st.header("🧵 Proteínas Fibrosas")
-    st.image("https://upload.wikimedia.org/wikipedia/commons/2/2c/Collagen_Fibril.png",
+    st.image("https://lh4.googleusercontent.com/proxy/sVYXyVjIRHaxr67QFx7PTXwxb5h6uhZzaiJGAM56w49uHBMYgASkb63uU6co7_kGxSLc4xfMPpzhzFHEb1M16OvgXZqMWgrDYQcgibEQgnPizFraDNf05hqvkGXgT-jf2e-dlsUsaXk_",
              caption="Fibras de colágeno", use_column_width=True)
 
     st.write("""
