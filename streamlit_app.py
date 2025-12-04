@@ -1,129 +1,202 @@
 import streamlit as st
+import pandas as pd
 
-st.set_page_config(page_title="Proteínas", page_icon="🧬", layout="wide")
-
-# ---------------------
-# MENÚ PRINCIPAL
-# ---------------------
-st.title("🧬 Introducción a las Proteínas")
-
-st.markdown("""
-Elaborado por: **Yuliana Dórame Félix** y **Jorge Alberto Duran Fuentes**
-""")
-
-st.markdown("""
-## ¿Qué son las proteínas?
-Las proteínas son macromoléculas esenciales formadas por cadenas de aminoácidos. Participan en prácticamente todos los procesos del cuerpo humano: desde la estructura y reparación de tejidos hasta la regulación del metabolismo y la defensa inmunológica.
-""")
-
-st.markdown("---")
-
-# Selección del apartado
-opcion = st.selectbox(
-    "Selecciona el tipo de proteína que deseas visualizar:",
-    [
-        "📌 Selecciona una opción",
-        "🧵 Proteínas Fibrosas",
-        "⚪ Proteínas Globulares",
-        "🧱 Proteínas de Membrana",
-        "💪 Proteínas Motoras",
-        "📦 Proteínas de Almacenamiento",
-        "⚙️ Proteínas Reguladoras"
-    ]
+# --- CONFIGURACIÓN VISUAL ---
+st.set_page_config(
+    page_title="BioProteínas | Enciclopedia de Proteínas",
+    layout="wide",
+    page_icon="🧬"
 )
 
-st.markdown("---")
+st.markdown("""
+<style>
+    .stTabs [data-baseweb="tab-list"] { gap: 8px; }
+    .stTabs [data-baseweb="tab"] {
+        height: 50px;
+        white-space: pre-wrap;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        border: 1px solid rgba(150, 150, 150, 0.2);
+        color: inherit;
+    }
+    .stTabs [aria-selected="true"] {
+        background-color: rgba(100, 100, 100, 0.1);
+        border-bottom: 2px solid #FF4B4B;
+        font-weight: bold;
+    }
+    .definition-box {
+        padding: 20px;
+        border-left: 5px solid #FF4B4B;
+        background-color: rgba(128, 128, 128, 0.1);
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+</style>
+""", unsafe_allow_html=True)
 
-# --------------------------
-# CONTENIDO SEGÚN OPCIÓN
-# --------------------------
+# --- TÍTULO ---
+st.title("🧬 Enciclopedia Visual de Proteínas")
+st.markdown("Explora la biología molecular: estructura, función y relevancia biomédica.")
 
-# 1. FIBROSAS
-if opcion == "🧵 Proteínas Fibrosas":
-    st.header("🧵 Proteínas Fibrosas")
+
+# --- TABS PRINCIPALES ---
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+    "🔬 ¿Qué son las proteínas?",
+    "⚙️ Funciones",
+    "🧱 Estructura",
+    "📚 Clasificación",
+    "🧪 Ejemplos importantes",
+    "🏥 Importancia biomédica"
+])
+
+# -------------------------------------------------------------------
+# TAB 1 — ¿QUÉ SON LAS PROTEÍNAS?
+# -------------------------------------------------------------------
+with tab1:
+    st.header("🔬 ¿Qué son las proteínas?")
     st.markdown("""
-Las proteínas fibrosas se caracterizan por presentar estructuras largas, alargadas y con forma de fibras. 
-Son altamente resistentes y cumplen funciones principalmente estructurales, proporcionando soporte y elasticidad 
-a tejidos como la piel, músculos, tendones y cabello.
+    Las **proteínas** son macromoléculas esenciales formadas por cadenas de aminoácidos unidas mediante enlaces peptídicos.
+    Constituyen uno de los principales componentes de todas las células y participan en prácticamente todos los procesos biológicos.
 
-### Características:
-- Estructura alargada y resistente  
-- Función estructural  
-- Ejemplos: **Colágeno, Queratina, Fibrina**  
-""")
-    st.image("https://mibepharma.com/fileadmin/_processed_/5/1/csm_Que-es-el-Colageno_a220342844.jpg", caption="Estructura tridimensional digitalizada del colágeno")
-    st.image("https://www.shutterstock.com/image-illustration/example-keratin-structure-fibrous-structural-260nw-510065677.jpg", caption="Estructura tridimensional digitalizada de la queratina")
+    ### 🌟 Características principales
+    - Están formadas por **20 aminoácidos** distintos.
+    - Adquieren una estructura tridimensional específica.
+    - Determinan funciones como catálisis, transporte y señalización celular.
+    - Pueden ser muy pequeñas o gigantes (miles de aminoácidos).
+    """)
 
-
-# 2. GLOBULARES
-elif opcion == "⚪ Proteínas Globulares":
-    st.header("⚪ Proteínas Globulares")
     st.markdown("""
-Las proteínas globulares tienen una estructura compacta y esférica que les permite participar en procesos 
-dinámicos dentro del organismo. Suelen ser solubles en agua y desempeñan funciones como transporte, catálisis 
-y regulación celular.
-
-### Características:
-- Forma esférica  
-- Funciones dinámicas  
-- Ejemplos: **Hemoglobina, Mioglobina, Enzimas**  
-""")
-    st.image("https://us.mozaweb.com/es/mozaik3D/KEM/szerves/hemoglobin/preview/Molekula.jpg", caption="Estructura digitalizada de la hemoglobina")
-    st.image("https://www.shutterstock.com/image-illustration/pepsin-3d-model-enzyme-that-260nw-108250013.jpg", caption="Estructura digitalizada de la enzima pepsina")
+    ### 🧬 ¿Por qué son importantes?
+    Las proteínas son **la maquinaria de la vida**. Nada en una célula funciona correctamente sin proteínas:
+    - No habría metabolismo sin enzimas.
+    - No habría musculatura sin actina ni miosina.
+    - No habría sistema inmune sin anticuerpos.
+    """)
 
 
-# 3. MEMBRANA
-elif opcion == "🧱 Proteínas de Membrana":
-    st.header("🧱 Proteínas de Membrana")
+# -------------------------------------------------------------------
+# TAB 2 — FUNCIONES
+# -------------------------------------------------------------------
+with tab2:
+    st.header("⚙️ Funciones de las proteínas")
+
     st.markdown("""
-Las proteínas de membrana están incrustadas o asociadas a la membrana celular, donde desempeñan funciones 
-vitales como transporte, señalización y comunicación.
+    Las proteínas desempeñan funciones vitales en todos los organismos vivos. Algunas de las más importantes incluyen:
+    """)
 
-### Características:
-- Asociadas a la membrana celular  
-- Transporte de sustancias  
-- Ejemplos: **Canales iónicos, GPCR, Bombas ATPasa**  
-""")
-    st.image("https://media.istockphoto.com/id/1333139388/es/foto/canal-iónico-en-la-membrana-celular.jpg", caption="Representación digitalizada de un canal iónico")
+    funciones = {
+        "Enzimática": "Catalizan reacciones químicas (ej. amilasa, ADN polimerasa).",
+        "Estructural": "Forman parte de tejidos (colágeno, queratina).",
+        "Transporte": "Transportan moléculas (hemoglobina).",
+        "Defensa": "Participan en la respuesta inmune (anticuerpos).",
+        "Regulación": "Controlan procesos celulares (hormonas proteicas).",
+        "Movimiento": "Permiten la contracción muscular (actina y miosina).",
+        "Almacenamiento": "Reservan aminoácidos o iones (ferritina)."
+    }
+
+    df_funciones = pd.DataFrame({
+        "Función": list(funciones.keys()),
+        "Descripción": list(funciones.values())
+    })
+
+    st.dataframe(df_funciones, use_container_width=True)
 
 
-# 4. MOTORAS
-elif opcion == "💪 Proteínas Motoras":
-    st.header("💪 Proteínas Motoras")
+# -------------------------------------------------------------------
+# TAB 3 — ESTRUCTURA
+# -------------------------------------------------------------------
+with tab3:
+    st.header("🧱 Niveles estructurales de las proteínas")
+
     st.markdown("""
-Las proteínas motoras son responsables del movimiento dentro de las células y del desplazamiento de estructuras 
-completas como los músculos. Utilizan ATP como fuente de energía.
+    Las proteínas adquieren su función gracias a su **estructura**, que se organiza en cuatro niveles:
+    """)
 
-### Características:
-- Permiten movimiento celular  
-- Ejemplos: **Actina, Miosina, Dineína, Quinesina**  
-""")
-    st.image("https://www.lifeder.com/wp-content/uploads/2019/05/miosina.jpg", caption="Representación de la miosina")
+    st.subheader("1️⃣ Estructura primaria")
+    st.markdown("Secuencia lineal de aminoácidos unidos por enlaces peptídicos.")
+
+    st.subheader("2️⃣ Estructura secundaria")
+    st.markdown("Patrones locales como **hélice alfa** y **lámina beta** formados por puentes de hidrógeno.")
+
+    st.subheader("3️⃣ Estructura terciaria")
+    st.markdown("Plegamiento tridimensional completo de la proteína debido a interacciones débiles.")
+
+    st.subheader("4️⃣ Estructura cuaternaria")
+    st.markdown("Asociación de varias cadenas polipeptídicas (como en la hemoglobina).")
+
+    st.info("La forma determina la función. Un cambio estructural = pérdida de función → enfermedades.")
 
 
-# 5. ALMACENAMIENTO
-elif opcion == "📦 Proteínas de Almacenamiento":
-    st.header("📦 Proteínas de Almacenamiento")
+# -------------------------------------------------------------------
+# TAB 4 — CLASIFICACIÓN
+# -------------------------------------------------------------------
+with tab4:
+    st.header("📚 Clasificación de proteínas")
+
     st.markdown("""
-Estas proteínas guardan nutrientes esenciales como aminoácidos o minerales para su uso posterior.
+    Las proteínas se pueden clasificar según diversos criterios:
+    """)
 
-### Características:
-- Reservan sustancias  
-- Ejemplos: **Ferritina, Caseína**  
-""")
-    st.image("https://www.researchgate.net/publication/337519666/figure/fig2/AS:11431281109081296@1671736572353/Figura-2-Estructura-de-la-ferritina-en-la-que-se-muestra-la-disposicion-de-las.png",
-             caption="Estructura digitalizada de la ferritina")
+    st.subheader("📌 Por forma")
+    st.markdown("- **Fibrosas** (colágeno)\n- **Globulares** (enzimas, anticuerpos)")
+
+    st.subheader("📌 Por composición")
+    st.markdown("- **Simples**: solo aminoácidos\n- **Conjugadas**: poseen grupos no proteicos")
+
+    st.subheader("📌 Por función")
+    st.markdown("- Enzimáticas, estructurales, transportadoras, hormonales, señalización, movimiento…")
 
 
-# 6. REGULADORAS
-elif opcion == "⚙️ Proteínas Reguladoras":
-    st.header("⚙️ Proteínas Reguladoras")
+# -------------------------------------------------------------------
+# TAB 5 — EJEMPLOS IMPORTANTES
+# -------------------------------------------------------------------
+with tab5:
+    st.header("🧪 Ejemplos relevantes de proteínas")
+
+    ejemplos = {
+        "Hemoglobina": "Transporta oxígeno en la sangre.",
+        "Actina": "Participa en el movimiento celular.",
+        "Colágeno": "Da resistencia a la piel, tendones y huesos.",
+        "Insulina": "Regula los niveles de glucosa.",
+        "Inmunoglobulinas": "Defensa contra patógenos.",
+        "ADN polimerasa": "Replica el ADN durante la división celular."
+    }
+
+    df_ej = pd.DataFrame({
+        "Proteína": ejemplos.keys(),
+        "Función": ejemplos.values()
+    })
+
+    st.table(df_ej)
+
+
+# -------------------------------------------------------------------
+# TAB 6 — IMPORTANCIA BIOMÉDICA
+# -------------------------------------------------------------------
+with tab6:
+    st.header("🏥 Importancia biomédica de las proteínas")
+
     st.markdown("""
-Las proteínas reguladoras controlan procesos biológicos como la expresión génica o la actividad enzimática.
+    Las proteínas son fundamentales para la medicina moderna:
 
-### Características:
-- Controlan funciones celulares  
-- Ejemplos: **Factores de transcripción, represores**  
-""")
-    st.image("https://upload.wikimedia.org/wikipedia/commons/7/72/1FOS.png",
-             caption="Factor de transcripción AP-1")
+    ### 🧬 Diagnóstico
+    - Biomarcadores en suero (troponinas, PCR, ferritina).
+    - Anticuerpos utilizados en pruebas rápidas.
+
+    ### 🧫 Tratamientos
+    - Terapias basadas en anticuerpos monoclonales.
+    - Enzimas terapéuticas.
+    - Hormonas recombinantes.
+
+    ### 🧪 Ingeniería biomédica
+    - Diseño de proteínas para mejorar fármacos.
+    - Ingeniería de anticuerpos para cáncer.
+    - Producción recombinante en bacterias y levaduras.
+
+    ### 🧠 Enfermedades relacionadas
+    - Alzheimer (proteínas mal plegadas).
+    - Fibrosis quística.
+    - Hemoglobinopatías.
+    """)
+
+    st.success("Las proteínas son la base del diagnóstico, tratamiento y prevención de enfermedades modernas.")
