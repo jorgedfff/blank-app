@@ -24,7 +24,7 @@ t1, t2, t3, t4, t5, t6, t7 = st.tabs([
 # -----------------------------
 with t1:
     st.header("🔬 Proteínas")
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Protein_primary_structure.svg/640px-Protein_primary_structure.svg.png",
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Protein_primary_structure.svg/1200px-Protein_primary_structure.svg.png",
              caption="Estructura primaria de una proteína", use_column_width=True)
 
     st.write("""
