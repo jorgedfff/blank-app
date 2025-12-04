@@ -5,6 +5,7 @@ st.set_page_config(page_title="Tipos de Proteínas", layout="wide", page_icon="�
 
 st.title("🧬 Portal Educativo: Tipos de Proteínas")
 st.markdown("Explora las principales categorías de proteínas y su función en la biología.")
+st.markdown(" Elaborado por: Yuliana Dórame Félix y Jorge Alberto Duran Fuentes.")
 
 st.divider()
 
