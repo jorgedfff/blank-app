@@ -3,7 +3,9 @@ st.set_page_config(page_title="Inicio - Proteínas", page_icon="🧬", layout="w
 
 def main():
     st.title(" 🧬 Introducción a las Proteínas")
-
+    st.markdown("""
+    Elaborado por: Yuliana Dórame Félix y Jorge Alberto Duran Fuentes
+    """)
     st.markdown("""
     ## ¿Qué son las proteínas?
     Las proteínas son macromoléculas esenciales formadas por cadenas de aminoácidos. Participan en prácticamente todos los procesos del cuerpo humano: desde la estructura y reparación de tejidos hasta la regulación del metabolismo y la defensa inmunológica.
