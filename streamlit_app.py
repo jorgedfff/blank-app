@@ -54,7 +54,7 @@ with t2:
 # -----------------------------
 with t3:
     st.header("⚪ Proteínas Globulares")
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Myoglobin.png/480px-Myoglobin.png",
+    st.image("https://upload.wikimedia.org/wikipedia/commons/6/60/Myoglobin.png",
              caption="Mioglobina, una proteína globular clásica", use_column_width=True)
 
     st.write("""
@@ -69,7 +69,7 @@ with t3:
 # -----------------------------
 with t4:
     st.header("🧱 Proteínas de Membrana")
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Cell_membrane_detailed_diagram_es.svg/640px-Cell_membrane_detailed_diagram_es.svg.png",
+    st.image("https://cdn.kastatic.org/ka-perseus-images/232f4a59434cfe373a9a19fecfd7bd6e87dcb67f.png",
              caption="Proteínas integrales y periféricas en la membrana celular", use_column_width=True)
 
     st.write("""
@@ -84,7 +84,7 @@ with t4:
 # -----------------------------
 with t5:
     st.header("⚙️ Proteínas Motoras")
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Myosin.PNG/480px-Myosin.PNG",
+    st.image("https://images.my.labster.com/0972b7e9-8757-4ea6-b6de-382a1d15fe84/MUT_Contraction2.es_ES.png",
              caption="Miosina desplazándose sobre filamentos de actina", use_column_width=True)
 
     st.write("""
@@ -99,7 +99,7 @@ with t5:
 # -----------------------------
 with t6:
     st.header("📦 Proteínas de Almacenamiento")
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Ferritin.png/480px-Ferritin.png",
+    st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmgvLCr-HSezbtxuhWZybdBSyJqAj6gyBqVQ&s",
              caption="Ferritina: proteína que almacena hierro", use_column_width=True)
 
     st.write("""
@@ -114,7 +114,7 @@ with t6:
 # -----------------------------
 with t7:
     st.header("🧭 Proteínas Reguladoras")
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Transcription_Factors.png/640px-Transcription_Factors.png",
+    st.image("https://cdn.lecturio.com/assets/Lac-operon-scaled.jpg",
              caption="Factores de transcripción regulando genes", use_column_width=True)
 
     st.write("""
